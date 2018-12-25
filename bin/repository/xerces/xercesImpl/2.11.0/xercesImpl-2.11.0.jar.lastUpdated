@@ -1,0 +1,4 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Sun Jun 24 00:06:56 IST 2018
+@default-central-https\://repo.maven.apache.org/maven2/.lastUpdated=1529779016315
+https\://repo.maven.apache.org/maven2/.error=Could not transfer artifact xerces\:xercesImpl\:jar\:2.11.0 from/to central (https\://repo.maven.apache.org/maven2)\: C\:\\Users\\SUBHODEEP\\.m2\\repository\\xerces\\xercesImpl\\2.11.0\\aether-f6a42467-bcec-4bec-8673-4b9864eb4e50-xercesImpl-2.11.0.jar-in-progress (The system cannot find the file specified)

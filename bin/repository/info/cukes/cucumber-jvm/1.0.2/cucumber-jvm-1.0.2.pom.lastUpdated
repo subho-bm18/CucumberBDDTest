@@ -1,0 +1,4 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Sun Jun 24 00:07:16 IST 2018
+@default-central-https\://repo.maven.apache.org/maven2/.lastUpdated=1529779036752
+https\://repo.maven.apache.org/maven2/.error=Could not transfer artifact info.cukes\:cucumber-jvm\:pom\:1.0.2 from/to central (https\://repo.maven.apache.org/maven2)\: C\:\\Users\\SUBHODEEP\\.m2\\repository\\info\\cukes\\cucumber-jvm\\1.0.2\\aether-af961896-4895-4536-beb0-8432ece40ecd-cucumber-jvm-1.0.2.pom-in-progress (The system cannot find the file specified)

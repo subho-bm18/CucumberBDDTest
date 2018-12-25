@@ -1,0 +1,4 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Sun Jun 24 00:06:57 IST 2018
+@default-central-https\://repo.maven.apache.org/maven2/.lastUpdated=1529779017124
+https\://repo.maven.apache.org/maven2/.error=Could not transfer artifact org.apache.httpcomponents\:httpclient\:jar\:4.4.1 from/to central (https\://repo.maven.apache.org/maven2)\: C\:\\Users\\SUBHODEEP\\.m2\\repository\\org\\apache\\httpcomponents\\httpclient\\4.4.1\\aether-b768f98b-e49b-4313-bcf8-6a586aa7bcc1-httpclient-4.4.1.jar-in-progress (The system cannot find the file specified)
