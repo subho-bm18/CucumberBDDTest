@@ -19,5 +19,6 @@ Scenario: Verify the details to enter in new form
 	And I fetch the details from JSON input file
 	And I click on Save Button
 	Then the details should be saved
+	And I should be able to verify the details in UI with input file
 	
 

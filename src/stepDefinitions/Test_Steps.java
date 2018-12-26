@@ -16,6 +16,7 @@ import testClass.DataFilling;
 import test.JsonDataReader;
 import testClass.CustomerAccDetails;
 import testClass.Address;
+import testClass.CustDetailsUI;
 
 public class Test_Steps {
 	//WebDriver webdriver = null;
@@ -129,6 +130,61 @@ public class Test_Steps {
 	@Then("^the details should be saved$")
 	public void the_details_should_be_saved() throws Throwable {
 	  
+	}
+	
+	@Then("^I should be able to verify the details in UI with input file$")
+	public void i_should_be_able_to_verify_the_details_in_UI_with_input_file() throws Throwable {
+		
+		System.out.println("verifying the details from UI with respect to Input File....");
+		String firstName[]={"Subhodeep","Arpita","Vombol"};
+		String lastName[]={"Ganguly","Ganguly","Bhatta"};
+		String phoneNum[]={"9748084401","9988667788","8971652225"};
+		String email[]={"abc@gmail.com","gef@gmail.com","xyz@gmail.com"};
+		String gender[]={"Male","Female","Kid"};
+		String address[][]={{"Delhi","110088"},{"Kolkata","743133"},{"Punjab","700159"}};
+		Address ab = null;
+		List<CustDetailsUI> custU= new ArrayList<CustDetailsUI>();
+	for (int i=0; i<3 ; i++)
+	{
+		String FirstName=firstName[i];
+	    String LastName=lastName[i];
+	    String PhoneNum = phoneNum[i];
+	    String Email=email[i];
+	    String Gender=gender[i];
+	    for (int j=0; j<=2 ; j++)
+	    {
+	    //List<Address> ab= new ArrayList<Address>();
+	    //ab.add((Address) Arrays.asList(address[i][j]));
+	    	int k=0;
+	    	ab = new Address();
+	    	ab.setCity(address[i][k]);
+	    	k++;
+	    	ab.setPin(address[i][k]);
+	    }
+	    
+	    
+	    CustDetailsUI cc= new CustDetailsUI(FirstName,LastName,PhoneNum,Email,Gender,ab);
+		System.out.println("Saving the details in ArrayList<Object> for Row "+i);
+
+	    custU.add(cc);
+	    
+	}
+	
+	for(CustDetailsUI ccu : custU)
+	{
+		System.out.println(ccu.getFirstName());
+		System.out.println(ccu.getLastName());
+		System.out.println(ccu.getPhoneNum());
+		System.out.println(ccu.getEmail());
+		System.out.println(ccu.getGender());
+		System.out.println(ccu.getAddress().getCity());
+		System.out.println(ccu.getAddress().getPin());
+	}
+	
+	
+		
+				
+	    
 	}
 
 

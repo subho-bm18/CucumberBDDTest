@@ -5,6 +5,15 @@ public class Address {
 private String City;
 private String Pin;
 
+public Address() {
+	
+}
+public Address(String city, String pin) {
+	super();
+	City = city;
+	Pin = pin;
+}
+
 public String getCity() {
 return City;
 }
